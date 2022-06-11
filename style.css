@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before{
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+.image_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vw;
+  margin-left: 5vw;
+  max-width: 90vw;
+  
+}
+.images{
+  position: relative;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  /* width: 25rem; */
+}
+#image_1{
+  background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  width: 15rem;
+}
+#image_2{
+  background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    width: 15rem;
+    /* transition: .75s ease-in-out; */
+}
+#image_3{
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80');
+  width: 15rem;
+}
+#image_4{
+  background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+  width: 15rem;
+}
+#image_5{
+  background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  width: 15rem;
+}
+
+.text_head{
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: #ffff;
+  font-size: 1.5rem;
+}
+#text_1,#text_2,#text_3,#text_4,#text_5{
+  opacity: 0;
+}
+.active{
+  /* opacity: 1; */
+  transition: .75s ease-in-out;
+  min-width: 50vw;
+}
+
+
+
+
+  @media (max-width: 590px) { 
+  
+    .image_container{
+      margin-left: 0vw; 
+    }
+    #text_5{
+      max-width: 8rem;
+    }
+  
+  }
+
+
+@media (max-width: 680px) { 
+  .text_head{
+    font-size: 1rem !important;
+    max-width: 10rem !important;
+  }
+  .image_container{
+    margin-left: 0vw; 
+  }
+
+}
+@media (max-width: 830px) {
+
+  .text_head{
+    font-size: 1.5rem;
+    max-width: 12rem;
+  }
+  .image_container{
+    margin-left: 0vw; 
+  }
+}
+
+@media (max-width: 992px) {
+
+  .text_head{
+    font-size: 1.25rem;
+    width: 15rem;
+  }
+  .image_container{
+    margin-left: 0vw; 
+  }
+}
+
+
